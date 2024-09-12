@@ -1,0 +1,11 @@
+.DS_Store
+
+.env
+
+terraform.tfvars
+.terraform
+*.tfstate*
+
+# this is a module
+.terraform.lock.hcl
+provider.tf
