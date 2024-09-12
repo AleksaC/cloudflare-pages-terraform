@@ -28,5 +28,13 @@ resource "cloudflare_zone" "this" {
 resource "cloudflare_pages_domain" "this" {
   account_id   = local.account_id
   project_name = cloudflare_pages_project.this.name
-  domain       = var.domain_name
+  domain       = cloudflare_zone.this.zone
+}
+
+resource "cloudflare_record" "this" {
+  zone_id = cloudflare_zone.this.id
+  name    = cloudflare_pages_domain.this.domain
+  content = cloudflare_pages_project.this.subdomain
+  proxied = true
+  type    = "CNAME"
 }
