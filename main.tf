@@ -38,3 +38,16 @@ resource "cloudflare_record" "this" {
   proxied = true
   type    = "CNAME"
 }
+
+resource "cloudflare_zone_settings_override" "this" {
+  zone_id = cloudflare_zone.this.id
+  settings {
+    always_online            = "off"
+    always_use_https         = "on"
+    automatic_https_rewrites = "off"
+    browser_cache_ttl        = 0
+    email_obfuscation        = "off"
+    min_tls_version          = "1.2"
+    security_level           = "low"
+  }
+}
