@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+  - repo: https://github.com/AleksaC/terraform-py
+    rev: v1.8.4
+    hooks:
+      - id: tf-fmt
+
+  - repo: https://github.com/AleksaC/tflint-py
+    rev: v0.51.1
+    hooks:
+      - id: tflint
