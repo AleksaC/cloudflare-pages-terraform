@@ -2,7 +2,7 @@
 
 ## About
 
-This is a terraform module that allows an easy setup of CloduFlare Pages project with a custom domain.
+This is a terraform module that allows an easy setup of CloudFlare Pages project with a custom domain.
 
 ## Getting Started
 
