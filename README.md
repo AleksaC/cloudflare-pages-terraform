@@ -8,7 +8,7 @@ This is a terraform module that allows easy declarative setup of CloudFlare Page
 
 ```terraform
 module "example" {
-    source = "github.com/AleksaC/cloudflare-pages-terraform?ref=v0.2.1"
+    source = "github.com/AleksaC/cloudflare-pages-terraform?ref=v0.2.2"
 
     name = "example"
     domain_name = "example.com"
@@ -32,7 +32,7 @@ API token permissions needed to deploy resources in this module:
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 4.41.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | >= 4.0.0 |
 
 ## Modules
 
