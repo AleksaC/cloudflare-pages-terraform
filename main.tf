@@ -19,7 +19,6 @@ locals {
   account_id = var.account_id == "" ? one(data.cloudflare_accounts.current[0].accounts).id : var.account_id
 }
 
-
 resource "cloudflare_pages_project" "this" {
   account_id        = local.account_id
   name              = var.name
