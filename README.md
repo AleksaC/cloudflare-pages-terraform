@@ -16,9 +16,9 @@ module "example" {
 ```
 
 API token permissions needed to deploy resources in this module:
-- Account Settings:Read (not required if you provided account id as a variable)
-- Cloudflare Pages:Edit
-- Zone:Edit, Zone Settings:Edit, DNS:Edit
+- `Account Settings:Read` (not required if you provided account id as a variable)
+- `Cloudflare Pages:Edit`
+- `Zone:Edit`, `Zone Settings:Edit`, `DNS:Edit`
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
