@@ -2,18 +2,23 @@
 
 ## About
 
-This is a terraform module that allows an easy setup of CloudFlare Pages project with a custom domain.
+This is a terraform module that allows easy declarative setup of CloudFlare Pages project with a custom domain.
 
 ## Getting Started
 
 ```terraform
 module "example" {
-    source = "github.com/AleksaC/cloudflare-pages-terraform?ref=v0.1.0"
+    source = "github.com/AleksaC/cloudflare-pages-terraform?ref=v0.2.0"
 
     name = "example"
     domain_name = "example.com"
 }
 ```
+
+API token permissions needed to deploy resources in this module:
+- Account Settings:Read (not required if you provided account id as a variable)
+- Cloudflare Pages:Edit
+- Zone:Edit, Zone Settings:Edit, DNS:Edit
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -59,6 +64,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_name_servers"></a> [name\_servers](#output\_name\_servers) | CloudFlare-assigned name servers. You need to update your nameservers at your registrar to point to these nameservers to complete the setup. |
 | <a name="output_zone_id"></a> [zone\_id](#output\_zone\_id) | n/a |
 <!-- END_TF_DOCS -->
 

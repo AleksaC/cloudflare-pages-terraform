@@ -51,5 +51,6 @@ resource "cloudflare_zone_settings_override" "this" {
     email_obfuscation        = "off"
     min_tls_version          = "1.2"
     security_level           = "low"
+    ssl                      = "strict"
   }
 }
