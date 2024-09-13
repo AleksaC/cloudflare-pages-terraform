@@ -54,7 +54,6 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_account_id"></a> [account\_id](#input\_account\_id) | CloudFlare account id. If not provided this module will try to extract it from `cloudflare_accounts` data source if it returns only one value, otherwise an error will be thrown | `string` | `""` | no |
-| <a name="input_cloudflare_api_token"></a> [cloudflare\_api\_token](#input\_cloudflare\_api\_token) | n/a | `any` | n/a | yes |
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | Custom domain | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the project | `string` | n/a | yes |
 | <a name="input_override_zone_settings"></a> [override\_zone\_settings](#input\_override\_zone\_settings) | Whether to make some opinionated changes to CloudFlare zone settings or keep the defaults | `bool` | `true` | no |
@@ -64,7 +63,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_name_servers"></a> [name\_servers](#output\_name\_servers) | CloudFlare-assigned name servers. You need to update your nameservers at your registrar to point to these nameservers to complete the setup. |
+| <a name="output_name_servers"></a> [name\_servers](#output\_name\_servers) | Cloudflare-assigned name servers. You need to update your nameservers at your registrar to point to these nameservers to complete the setup. |
 | <a name="output_zone_id"></a> [zone\_id](#output\_zone\_id) | n/a |
 <!-- END_TF_DOCS -->
 
