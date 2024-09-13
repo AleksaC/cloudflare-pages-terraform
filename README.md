@@ -1,4 +1,4 @@
-# cloudflare-pages-module-terraform
+# cloudflare-pages-terraform
 
 ## About
 
@@ -8,7 +8,7 @@ This is a terraform module that allows an easy setup of CloduFlare Pages project
 
 ```terraform
 module "example" {
-    source = "github.com/hashicorp/example?ref=v0.1.0"
+    source = "github.com/AleksaC/cloudflare-pages-terraform?ref=v0.1.0"
 
     name = "example"
     domain_name = "example.com"
